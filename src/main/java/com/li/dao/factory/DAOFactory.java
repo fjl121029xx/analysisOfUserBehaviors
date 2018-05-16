@@ -1,6 +1,9 @@
 package com.li.dao.factory;
 
+
+import com.li.dao.ISessionAggrStatDAO;
 import com.li.dao.ITaskDAO;
+import com.li.dao.impl.SessionAggrStatDAOImpl;
 import com.li.dao.impl.TaskDAOImpl;
 
 /**
@@ -10,12 +13,15 @@ import com.li.dao.impl.TaskDAOImpl;
  */
 public class DAOFactory {
 
-	/**
-	 * 获取任务管理DAO
-	 * @return DAO
-	 */
+
 	public static ITaskDAO getTaskDAO() {
 		return new TaskDAOImpl();
 	}
+
+	public static ISessionAggrStatDAO getSessionAggrStatDAO() {
+		return new SessionAggrStatDAOImpl();
+	}
+	
+
 	
 }

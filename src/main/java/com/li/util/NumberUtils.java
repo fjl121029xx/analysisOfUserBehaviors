@@ -1,6 +1,5 @@
 package com.li.util;
 
-
 import java.math.BigDecimal;
 
 /**
