@@ -85,6 +85,16 @@ public class UserVisitSessionAnalyzeSpark {
         sc.close();
     }
 
+    /**
+     *
+     * @param sessionid2AggrInfoRDD
+     * @param taskparam
+     * @return
+     */
+    private static JavaPairRDD<String, String> filterSession(JavaPairRDD<String, String> sessionid2AggrInfoRDD, JSONObject taskparam) {
+
+        return null;
+    }
 
     private static JavaPairRDD<String, String> aggregaBySession(SQLContext sqlContext, JavaRDD<Row> actionRDD) {
 
