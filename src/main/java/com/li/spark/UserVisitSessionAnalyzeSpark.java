@@ -83,6 +83,7 @@ public class UserVisitSessionAnalyzeSpark {
 
         JavaRDD<Row> actionRDD = getActionRddByDataRange(sqlContext, taskparm);
 
+
         JavaPairRDD<String, String> sessionid2AggrInfoRDD = aggregaBySession(sqlContext, actionRDD);
 
         Accumulator<String> sessionAggrStatAccumulator = sc.accumulator(
